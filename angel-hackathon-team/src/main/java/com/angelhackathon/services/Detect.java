@@ -58,15 +58,18 @@ public final class Detect extends YandexTranslatorAPI {
         validateServiceState();
     }
     
-    public static void main(String[] args) {
+    public String detectLanguage(String textToTranslate) {
+    	String translatedString = null;
       try {
         Translate.setKey(APIConstants.YANDEX_API_KEY);
-        Language translation = Detect.execute("The quick brown fox jumps over the lazy dog.");
+        Language translation = Detect.execute(textToTranslate);
+        translatedString = translation.toString();
         System.out.println("Detected: " + translation.toString());
       } catch (Exception e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
       }
+	return translatedString;
     }
 
 }
