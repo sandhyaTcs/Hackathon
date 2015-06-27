@@ -13,6 +13,7 @@
 		<junit.version>3.8.1</junit.version>
 		<webcam-capture.version>0.3.10</webcam-capture.version>
 		<json.version>20140107</json.version>
+		<jsonnew.version>1.1</jsonnew.version>
 		<httpclient.version>4.3.3</httpclient.version>
 		<unirest-java.version>1.3.11</unirest-java.version>
 		<commons-httpclient.version>3.1</commons-httpclient.version>
@@ -102,6 +103,12 @@
 		<artifactId>json</artifactId>
 		<version>${json.version}</version>
 	</dependency>
+	<dependency>
+		<groupId>com.googlecode.json-simple</groupId>
+		<artifactId>json-simple</artifactId>
+		<version>${jsonnew.version}</version>
+	</dependency>
+
   </dependencies>
   <build>
     <finalName>angel-hackathon-team</finalName>
