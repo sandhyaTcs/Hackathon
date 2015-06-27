@@ -24,7 +24,7 @@ public class ProcessAudioServiceImpl implements ProcessAudioService {
 		JSONArray jsonArray = null;
 		while (i<5) {
 			if (null != jsonObject && jsonObject.has("result")) {
-				convertAudioClip = jsonObject.getString("result");
+				convertAudioClip = jsonObject.get("result").toString();
 				
 				//convertAudioClip = jsonArray.getJSONObject(0).getString("result");
 				jsonObject = new JSONObject(convertAudioClip);
@@ -47,21 +47,6 @@ public class ProcessAudioServiceImpl implements ProcessAudioService {
 				i++;
 			}
 		}
-/*		convertAudioClip = callingSampleAPI.getAudioDetails();
-		jsonObject = new JSONObject(convertAudioClip);
-		JSONArray jsonArray = (JSONArray) jsonObject.get("actions");
-		jsonObject = new JSONObject(jsonArray.get(0).toString());
-		if (jsonObject.has("result")) {
-			convertAudioClip = jsonObject.getString("result");
-			jsonObject = new JSONObject(convertAudioClip);
-			jsonArray = (JSONArray) jsonObject.get("document");
-			
-			jsonObject = new JSONObject(jsonArray.get(0).toString());
-			convertAudioClip = jsonObject.getString("content");
-		} else {
-			convertAudioClip = callingSampleAPI.getAudioDetails();
-		}*/
-		
 		
 		return convertAudioClip;
 	}
