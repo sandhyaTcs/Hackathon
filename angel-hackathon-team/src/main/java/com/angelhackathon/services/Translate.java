@@ -66,7 +66,7 @@ public final class Translate extends YandexTranslatorAPI {
 	  String translation = null;
 	  try {
       Translate.setKey(ApiKeys.YANDEX_API_KEY);
-      translation = Translate.execute("The quick brown fox jumps over the lazy dog.", Language.ENGLISH, Language.SPANISH);
+      translation = Translate.execute(convertedString, Language.ENGLISH, Language.SPANISH);
       System.out.println("Translation: " + translation);
     } catch (Exception e) {
       // TODO Auto-generated catch block

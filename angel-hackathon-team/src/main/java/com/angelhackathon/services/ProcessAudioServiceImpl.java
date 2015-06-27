@@ -22,7 +22,7 @@ public class ProcessAudioServiceImpl implements ProcessAudioService {
 		String convertAudioClip = null;
 		SpeechAPI speechApi = new SpeechAPI();
 		JSONArray jsonArray = null;
-		while (i<5) {
+		while (i<60) {
 			if (null != jsonObject && jsonObject.has("result")) {
 				convertAudioClip = jsonObject.get("result").toString();
 				
