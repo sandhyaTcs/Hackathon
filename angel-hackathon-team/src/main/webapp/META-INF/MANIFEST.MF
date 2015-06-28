@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: aopalliance-1.0.jar bridj-0.6.2.jar clusterpoint-7.jar com
+ mons-codec-1.2.jar commons-httpclient-3.1.jar commons-logging-1.0.4.j
+ ar httpasyncclient-4.0.1.jar httpclient-4.3.3.jar httpcore-4.3.2.jar 
+ httpcore-nio-4.3.2.jar httpmime-4.3.3.jar javax.servlet-api-3.0.1.jar
+  json-20140107.jar json-simple-1.1.jar slf4j-api-1.7.2.jar spring-aop
+ -4.0.1.RELEASE.jar spring-beans-4.0.1.RELEASE.jar spring-context-4.0.
+ 1.RELEASE.jar spring-context-support-4.0.1.RELEASE.jar spring-core-4.
+ 0.1.RELEASE.jar spring-expression-4.0.1.RELEASE.jar spring-tx-4.0.1.R
+ ELEASE.jar spring-web-4.0.1.RELEASE.jar spring-webmvc-4.0.1.RELEASE.j
+ ar unirest-java-1.3.11.jar webcam-capture-0.3.10.jar
+
